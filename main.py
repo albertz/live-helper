@@ -6,12 +6,14 @@ class Document:
 		self.type = None
 
 def foregroundDocument(): return Document()
-def waitFocusChangeEvent():
+def waitSystemEvent():
 	# TODO ...
 	import time
 	time.sleep(1)
 
 class Window:
+	def placeNextTo(self, win):
+		pass
 	def showMarkdown(self, txt):
 		pass
 
@@ -19,5 +21,7 @@ while True:
 	doc = foregroundDocument()
 	if doc.type == MarkdownTxtType:
 		win = Window()
+		win.placeNextTo(doc)
 		win.showMarkdown(doc.txt)
-	waitFocusChangeEvent()
+
+	waitSystemEvent()
