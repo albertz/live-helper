@@ -8,3 +8,7 @@ There is nothing here yet.
 ## Related
 
 * [tip - Programmable tooltip that can be used with any Mac OS app](https://github.com/tanin47/tip)
+
+## Resources
+
+* https://github.com/microsoft/OmniParser: A simple screen parsing tool towards pure vision based GUI agent
